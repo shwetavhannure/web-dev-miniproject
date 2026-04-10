@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel MAnagement</title>
+    <title>Hotel Management</title>
+
     <style>
         *{
             margin:0px;
             padding: 0px;
             box-sizing: border-box;
         }
+
         nav{
             width: 100%;
             height: 75px;
@@ -19,23 +21,26 @@
             position:fixed;
             background-image: linear-gradient(#033747,#012733);
         }
-    
+
         nav .filds p{
-        font-size: 18px;
-        font-weight: bold;
-        float: left;
-        color: white;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-        cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            float: left;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
         }
+
         nav ul{
             float: right;
         }
+
         nav li{
             display: inline-block;
             list-style: none;
         }
+
         nav li a{
             font-size: 20px;
             text-transform: uppercase;
@@ -43,91 +48,105 @@
             color: white;
             text-decoration: none;
         }
+
         nav li a:hover{
             color: red;
         }
+
         .section{
             background-color: #252121;
             display: flex;
             justify-content: space-between;
             padding: 40px;
             width: 60%;
-            margin: 10rem auto;
-           
+            margin: 40px auto;
+            border-radius: 10px;
         }
+
         .section img{
             height: 250px;
-            
         }
-        .section h1{
-            margin: 0;
-            color: greenyellow;
-        }
+
         .section p{
             color: #c0bdbd;
             margin-right: 15px;
+            line-height: 1.5;
         }
+
         .section:hover{
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
-        transform: translate(10px);
-        transition: transform 0.6s;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            transform: translate(10px);
+            transition: transform 0.6s;
         }
-        
+
+        .heading{
+            text-align: center;
+            color: white;
+            background-color: rgb(64, 68, 70);
+            height: 150px;
+            padding-top: 60px;
+        }
     </style>
 </head>
+
 <body>
-    <!--Navigation section Start-->
+
     <nav>
         <div class="filds">
             <p>The Plaza Hotel</p>
         </div>
+
         <ul>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./Meeting & Celebration.html">Meeting & Celebration</a></li>
-            <li><a href="./Rooms.html">ROOMS</a></li>
-            <li><a href="./Room-Booking.html">Room-Booking</a></li>
+            <li><a href="./meeting-celebration.html">Meeting & Celebration</a></li>
+            <li><a href="./rooms.html">ROOMS</a></li>
+            <li><a href="./room-booking.html">Room-Booking</a></li>
             <li><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
-<!--Navigation section End-->
-    
-<!--Welcome section start-->
-<div style="text-align: center;font-size: 50;font-weight: bold;color: white;background-color: rgb(64, 68, 70); height: 150px;padding-top: 90px;">
-    <h1>Guest Rooms</h1>
-</div>
 
-<div class="section" style="margin-top: 30px;">
-    <div class="text">
-        <p>The Plaza King features one King bed and is located on floors 5 – 19. Bathroom is finished with,<br> 
-            inlaid “earth stone” mosaics and include a luxurious bathtub and separate shower. Among many <br>
-            splendid details are 24-carat gold-plated Sherle Wagner fixtures, as well as hand-crafted solid white marble vanities.
+    <div class="heading">
+        <h1>Guest Rooms</h1>
     </div>
-    <img src="./images/plaza-room1.jpg" alt=""/>
-        </p>
-</div>
 
-<div class="section">
-    <div class="text">
-        <p>The Plaza’s expansive Deluxe King has one King bed and provide 550 sq. ft. of living space.<br> Bathroom is finished with inlaid “earth stone” mosaics and <br> include a luxurious bathtub and separate shower. Among many splendid details are 24-carat gold-plated Sherle Wagner fixtures, as well as hand-crafted solid white marble vanities.
+    <div class="section">
+        <div class="text">
+            <p>
+                The Plaza King features one King bed and is located on floors 5–19.
+                Bathroom is finished with inlaid earth stone mosaics and includes a luxurious bathtub and separate shower.
+            </p>
+        </div>
+        <img src="./images/plaza-room1.jpg" alt="">
     </div>
-    <img src="./images/plaza-room2.jpg" alt=""/>
-        </p>
-</div>
 
-<div class="section">
-    <div class="text">
-        <p>The Connecting Deluxe features 1,025 sq. ft. of living space with two connecting rooms: one <br>with a King bed and the other with two Queen beds. Bathrooms are finished with inlaid “earth stone” mosaics and include a luxurious bathtub and separate shower.<br> Among many splendid details are 24-carat gold-plated Sherle Wagner fixtures, as well as hand-crafted solid white marble vanities.
+    <div class="section">
+        <div class="text">
+            <p>
+                The Plaza’s Deluxe King has one King bed and provides 550 sq. ft. of living space.
+                It includes a bathtub, separate shower, and luxury marble finishes.
+            </p>
+        </div>
+        <img src="./images/plaza-room2.jpg" alt="">
     </div>
-    <img src="./images/plaza-room4.jpg" alt=""/>
-        </p>
-</div>
 
-<div class="section">
-    <div class="text">
-        <p>The Grand Luxe King Room features an open-concept room that provides a comfortable sitting <br> area, King Bed, and Butler’s pantry. The bathroom reflects The Plaza’s classically elegant style<br> with inlaid “earth stone” mosaics, a luxurious bathtub, and a separate, oversize shower. Details include 24-carat gold-plated Sherle Wagner fixtures, as well as solid white marble vanities and wet bar.
+    <div class="section">
+        <div class="text">
+            <p>
+                The Connecting Deluxe features 1,025 sq. ft. with two connecting rooms:
+                one King bed room and one two Queen bed room with luxury bathrooms.
+            </p>
+        </div>
+        <img src="./images/plaza-room4.jpg" alt="">
     </div>
-    <img src="./images/plaza-room3.jpg" alt=""/>
-        </p>
-</div>
+
+    <div class="section">
+        <div class="text">
+            <p>
+                The Grand Luxe King Room offers an open layout with seating area,
+                King bed, butler pantry, and elegant marble bathroom with luxury fittings.
+            </p>
+        </div>
+        <img src="./images/plaza-room3.jpg" alt="">
+    </div>
 </body>
 </html>
