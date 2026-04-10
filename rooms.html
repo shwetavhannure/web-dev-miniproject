@@ -13,12 +13,16 @@
             box-sizing: border-box;
         }
 
+        html{
+            scroll-behavior: smooth;
+        }
+
         nav{
             width: 100%;
             height: 75px;
             line-height: 75px;
             padding: 0px 100px;
-            position:fixed;
+            position: fixed;
             background-image: linear-gradient(#033747,#012733);
         }
 
@@ -53,18 +57,29 @@
             color: red;
         }
 
+        .heading{
+            text-align: center;
+            color: white;
+            background-color: rgb(64, 68, 70);
+            height: 150px;
+            padding-top: 60px;
+        }
+
         .section{
             background-color: #252121;
             display: flex;
             justify-content: space-between;
+            align-items: center;
             padding: 40px;
             width: 60%;
             margin: 40px auto;
             border-radius: 10px;
+            transition: 0.3s ease;
         }
 
         .section img{
             height: 250px;
+            border-radius: 10px;
         }
 
         .section p{
@@ -74,23 +89,12 @@
         }
 
         .section:hover{
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
-            transform: translate(10px);
-            transition: transform 0.6s;
-        }
-
-        .heading{
-            text-align: center;
-            color: white;
-            background-color: rgb(64, 68, 70);
-            height: 150px;
-            padding-top: 60px;
+            transform: scale(1.02);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.6);
         }
     </style>
 </head>
-
 <body>
-
     <nav>
         <div class="filds">
             <p>The Plaza Hotel</p>
@@ -99,7 +103,7 @@
         <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./meeting-celebration.html">Meeting & Celebration</a></li>
-            <li><a href="./rooms.html">ROOMS</a></li>
+            <li><a href="./rooms.html">Rooms</a></li>
             <li><a href="./room-booking.html">Room-Booking</a></li>
             <li><a href="./contact.html">Contact</a></li>
         </ul>
@@ -116,37 +120,38 @@
                 Bathroom is finished with inlaid earth stone mosaics and includes a luxurious bathtub and separate shower.
             </p>
         </div>
-        <img src="./images/plaza-room1.jpg" alt="">
+        <img src="./images/plaza-room1.jpg" alt="Plaza King Room">
     </div>
 
     <div class="section">
         <div class="text">
             <p>
-                The Plaza’s Deluxe King has one King bed and provides 550 sq. ft. of living space.
-                It includes a bathtub, separate shower, and luxury marble finishes.
+                The Deluxe King has one King bed and offers 550 sq. ft. of living space.
+                Includes luxury marble bathroom with bathtub and shower.
             </p>
         </div>
-        <img src="./images/plaza-room2.jpg" alt="">
+        <img src="./images/plaza-room2.jpg" alt="Deluxe King Room">
     </div>
 
     <div class="section">
         <div class="text">
             <p>
                 The Connecting Deluxe features 1,025 sq. ft. with two connecting rooms:
-                one King bed room and one two Queen bed room with luxury bathrooms.
+                King bed room and Queen bed room with premium facilities.
             </p>
         </div>
-        <img src="./images/plaza-room4.jpg" alt="">
+        <img src="./images/plaza-room4.jpg" alt="Connecting Deluxe Room">
     </div>
 
     <div class="section">
         <div class="text">
             <p>
-                The Grand Luxe King Room offers an open layout with seating area,
-                King bed, butler pantry, and elegant marble bathroom with luxury fittings.
+                The Grand Luxe King Room includes a seating area, King bed,
+                butler pantry, and luxury marble bathroom with elegant fittings.
             </p>
         </div>
-        <img src="./images/plaza-room3.jpg" alt="">
+        <img src="./images/plaza-room3.jpg" alt="Grand Luxe Room">
     </div>
+
 </body>
 </html>
